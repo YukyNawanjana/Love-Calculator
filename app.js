@@ -82,7 +82,29 @@ function requsetResult(boyName, girlName){
 
     xhr.onload = function(){
         if(this.status === 200){
-            console.log(this.responseText);
+            const resultObj = (JSON.parse(this.responseText));
+            const bname = resultObj.fname;
+            const gname = resultObj.sname;
+            const percentage = resultObj.percentage;
+            const result = resultObj.result;
+             //resultHtml ; = document.createElement('div');
+            //     resultHtml.classList.add('row', 'mt-4');
+
+            const resultHtml =  `   <div class="row mt-4">
+                                    <div class="col-md-12 text-center">
+                                        <h2 class="text-danger mb-3">Result</h2>
+                                    <div class="text-danger">
+                                        <h4> ${boyName} <i style="padding:0 10px; font-size:20px;" class="fas fa-heart"></i> ${girlName}</h4>
+                                    </div>
+                                    <h1 class="text-danger mt-3 mb-3"><strong> ${percentage}%</strong></h1>
+                                    <h5 class="text-danger"><strong>${result}</strong></h5>
+                                    </div>
+                                    </div>
+                                    <br><br>`
+                            ;
+
+            document.querySelector('.result').innerHTML = resultHtml ;
+
         }
     }
 
