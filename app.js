@@ -103,7 +103,8 @@ function requsetResult(boyName, girlName){
                                     <br><br>`
                             ;
 
-            document.querySelector('.result').innerHTML = resultHtml ;
+            displayResultHtml(resultHtml);
+           
 
         }
     }
@@ -111,4 +112,17 @@ function requsetResult(boyName, girlName){
     xhr.send();
 
 
+}
+
+
+function displayResultHtml(resultHtml){
+
+    document.querySelector('.spinner').classList.remove('d-none');
+    document.querySelector('.result').classList.add('d-none');
+    setTimeout(function(){
+        document.querySelector('.spinner').classList.add('d-none');
+        document.querySelector('.result').classList.remove('d-none');
+        document.querySelector('.result').innerHTML = resultHtml ;
+
+    },2000);
 }
