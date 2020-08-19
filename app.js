@@ -97,7 +97,7 @@ function requsetResult(boyName, girlName){
                                         <h4> ${boyName} <i style="padding:0 10px; font-size:20px;" class="fas fa-heart"></i> ${girlName}</h4>
                                     </div>
                                     <h1 class="text-danger mt-3 mb-3"><strong> ${percentage}%</strong></h1>
-                                    <h5 class="text-danger"><strong>${result}</strong></h5>
+                                    <h4 class="text-danger animate__animated animate__bounceIn"><strong>${result}</strong></h4>
                                     </div>
                                     </div>
                                     <br><br>`
