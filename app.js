@@ -124,5 +124,5 @@ function displayResultHtml(resultHtml){
         document.querySelector('.result').classList.remove('d-none');
         document.querySelector('.result').innerHTML = resultHtml ;
 
-    },2000);
+    }, 2500);
 }
