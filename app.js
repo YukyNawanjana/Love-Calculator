@@ -49,7 +49,7 @@ document.querySelector('.html-content').addEventListener('click', function(e){
         }else{
             
         }
-        
+     
     
 });
 
@@ -125,4 +125,8 @@ function displayResultHtml(resultHtml){
         document.querySelector('.result').innerHTML = resultHtml ;
 
     }, 2500);
+
+
+    document.querySelector('.boyname').value = '';
+    document.querySelector('.girlname').value = '';
 }
