@@ -21,7 +21,7 @@ function evenetListener(){
                                     </div>
                                     </div>
                                     
-                                    <button type="submit" id="calculatBtn" class="btn btn-danger btn-block mt-4 ">Calculat</button>
+                                    <button type="submit" id="calculatBtn" class="btn btn-danger btn-block mt-4 ">Calculate</button>
                                 </form>
                     `;
         colmd12.innerHTML = htmlFrom;
